@@ -5,6 +5,7 @@ import '../App.css'
 import StatChart from './StatChart'
 import PokemonTypes from './PokemonTypes'
 import NavigationBar from './NavigationBar'
+import SearchView from './SearchView'
 
 const DetailedView = () => {
     const { selectedCard, pokemonObject, setPokemonObject } = useContext(AppContext);
@@ -22,14 +23,17 @@ const DetailedView = () => {
 
     return (
         <div className='detailed-view'>{
-            pokemonObject && 
-            (<div>
-                <NavigationBar />
-                <div>{pokemonObject[0].name}</div>
-                <img src={pokemonObject[0].sprites['other']['home']['front_default']} alt="" />
-                <PokemonTypes types={pokemonObject[0]['types']}/>
-                <StatChart stats={pokemonObject[0].stats}/>
-            </div>)
+            (pokemonObject && 
+                (<div>
+                    <NavigationBar />
+                    <div>{pokemonObject[0].name}</div>
+                    <img src={pokemonObject[0].sprites['other']['home']['front_default']} alt="" />
+                    <PokemonTypes types={pokemonObject[0]['types']}/>
+                    <StatChart stats={pokemonObject[0].stats}/>
+                </div>)) || 
+                (<div>
+                    <SearchView />
+                </div>)
         }</div>
     )
 }
