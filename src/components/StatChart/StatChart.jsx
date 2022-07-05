@@ -1,9 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Bar } from "react-chartjs-2";
 import { Chart as ChartJS } from "chart.js/auto";
-import { AppContext } from '../App';
+import { AppContext } from '../../App';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
-import '../App.css'
+import '../../App.css'
 
 const StatChart = ({ stats }) => {
 
@@ -78,7 +78,9 @@ const StatChart = ({ stats }) => {
     return (
         <div className="stat-chart">
             Stats
-            <Bar data={statData} plugins={[ChartDataLabels]} options={options} />
+            <div className="chart">
+                <Bar data={statData} plugins={[ChartDataLabels]} options={options} />
+            </div>
         </div>
         
     )

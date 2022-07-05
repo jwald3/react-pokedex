@@ -1,0 +1,13 @@
+.search-container {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input {
+    width: 80%;
+    height: 60%;
+    outline: none;
+    font-size: 1rem;
+}

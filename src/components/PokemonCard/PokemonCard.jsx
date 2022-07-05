@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
-import { pokemonData } from '../data/pokemon'
-import { AppContext } from '../App'
-import { bgTypeColors } from '../data/typeColors'
+import { pokemonData } from '../../data/pokemon'
+import { AppContext } from '../../App'
+import { bgTypeColors } from '../../data/typeColors'
 
 const PokemonCard = ({pokemon}) => {
 

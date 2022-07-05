@@ -1,5 +1,6 @@
 import React, { useContext} from 'react'
-import { AppContext } from '../App'
+import { AppContext } from '../../App'
+import { IoCaretBack, IoCaretForward } from 'react-icons/io5'
 
 const NavigationBar = () => {
     const { selectedCard, setSelectedCard } = useContext(AppContext);
@@ -18,10 +19,10 @@ const NavigationBar = () => {
 
     
     return (
-        <div>
-            <button onClick={() => navigateBack()}>Back</button>
+        <div className='navigation-bar'>
+            <button onClick={() => navigateBack()}><IoCaretBack/></button>
 
-            <button onClick={() => navigateForward()}>Next</button>
+            <button onClick={() => navigateForward()}><IoCaretForward/></button>
         </div>
     )
 }

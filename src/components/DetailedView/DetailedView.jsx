@@ -1,11 +1,11 @@
 import React, { useContext, useEffect } from 'react'
-import { AppContext } from '../App'
-import { pokemonData } from '../data/pokemon'
-import '../App.css'
-import StatChart from './StatChart'
-import PokemonTypes from './PokemonTypes'
-import NavigationBar from './NavigationBar'
-import SearchView from './SearchView'
+import { AppContext } from '../../App'
+import { pokemonData } from '../../data/pokemon'
+import '../../App.css'
+import StatChart from '../StatChart/StatChart'
+import PokemonTypes from '../PokemonTypes/PokemonTypes'
+import NavigationBar from '../NavigationBar/NavigationBar'
+import SearchView from '../SearchView/SearchView'
 
 const DetailedView = () => {
     const { selectedCard, pokemonObject, setPokemonObject } = useContext(AppContext);

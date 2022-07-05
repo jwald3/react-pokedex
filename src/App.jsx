@@ -1,7 +1,8 @@
 import { createContext, useState } from "react";
 import "./App.css";
-import AllPokemon from "./components/AllPokemon";
-import DetailedView from './components/DetailedView'
+import AllPokemon from "./components/AllPokemon/AllPokemon";
+import BrowseInterface from "./components/BrowseInterface/BrowseInterface";
+import DetailedView from './components/DetailedView/DetailedView'
 import { pokemonData } from './data/pokemon';
 
 export const AppContext = createContext();
@@ -21,7 +22,7 @@ const App = () => {
                     setPokemonObject
                 }}
             >
-                <AllPokemon pokemon={pokemonData} />
+                <BrowseInterface />
                 <DetailedView />
             </AppContext.Provider>
         </div>

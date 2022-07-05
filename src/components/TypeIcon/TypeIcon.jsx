@@ -1,5 +1,5 @@
 import React from 'react'
-import { typeColors } from '../data/typeColors'
+import { typeColors } from '../../data/typeColors'
 
 const TypeIcon = ({type}) => {
 

@@ -1,6 +1,6 @@
 import React from 'react'
-import PokemonCard from './PokemonCard'
-import SearchBar from './SearchBar'
+import PokemonCard from '../PokemonCard/PokemonCard'
+import SearchBar from '../SearchBar/SearchBar'
 
 const AllPokemon = ({pokemon}) => {
   
