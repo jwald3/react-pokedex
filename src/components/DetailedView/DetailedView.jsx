@@ -18,6 +18,8 @@ const DetailedView = () => {
         if (selectedCard !== 0) {
             const selectedPokemon = getSelectedPokemon(selectedCard);
             setPokemonObject(selectedPokemon);
+        } else {
+            setPokemonObject(null)
         }
     }, [selectedCard])
 

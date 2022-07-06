@@ -3,6 +3,7 @@
 .App {
     text-align: center;
     display: flex;
+    min-height: 100%;
     max-height: 100%;
     text-transform: capitalize;
     font-family: "Lato", "sans-serif";
@@ -35,6 +36,7 @@
 }
 
 .all-pokemon {
+    min-height: 100vh;
     max-height: 100vh;
     overflow-y: scroll;
     flex: 2;
@@ -109,24 +111,6 @@
     margin: 1%;
     font-size: 2.5vmin;
     min-width: 75px;
-    color: #fff;
-}
-
-.navigation-bar {
-    background-color: #5b6368;
-    display: flex;
-    height: 5vh;
-    padding-left: 10%;
-    padding-right: 10%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navigation-bar button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 2rem;
     color: #fff;
 }
 
