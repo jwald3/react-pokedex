@@ -6,6 +6,7 @@ import StatChart from '../StatChart/StatChart'
 import PokemonTypes from '../PokemonTypes/PokemonTypes'
 import NavigationBar from '../NavigationBar/NavigationBar'
 import SearchView from '../SearchView/SearchView'
+import './DetailedView.css'
 
 const DetailedView = () => {
     const { selectedCard, pokemonObject, setPokemonObject } = useContext(AppContext);
