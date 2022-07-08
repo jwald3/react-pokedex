@@ -1,4 +1,5 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
+import axios from 'axios'
 import "./App.css";
 import BrowseInterface from "./components/BrowseInterface/BrowseInterface";
 import DetailedView from './components/DetailedView/DetailedView'
@@ -10,6 +11,13 @@ const App = () => {
     const [selectedCard, setSelectedCard] = useState(0);
     const [pokemonObject, setPokemonObject] = useState(null);
     const [searchQuery, setSearchQuery] = useState("");
+    const [speciesData, setSpeciesData] = useState(null);
+
+    useEffect(() => {
+        axios.get(`https://pokeapi.co/api/v2/pokemon-species/${selectedCard}`)
+        .then(response => setSpeciesData(response.data));
+    }, [selectedCard])
+
 
     return ( 
         <div className="App">
@@ -20,7 +28,8 @@ const App = () => {
                     pokemonObject,
                     setPokemonObject,
                     searchQuery,
-                    setSearchQuery
+                    setSearchQuery,
+                    speciesData
                 }}
             >
                 <BrowseInterface />

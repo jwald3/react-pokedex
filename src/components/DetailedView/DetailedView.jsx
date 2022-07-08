@@ -7,6 +7,8 @@ import PokemonTypes from '../PokemonTypes/PokemonTypes'
 import NavigationBar from '../NavigationBar/NavigationBar'
 import SearchView from '../SearchView/SearchView'
 import './DetailedView.css'
+import PokemonBlurb from '../PokemonBlurb/PokemonBlurb'
+import EvolutionChain from '../EvolutionChain/EvolutionChain'
 
 const DetailedView = () => {
     const { selectedCard, pokemonObject, setPokemonObject } = useContext(AppContext);
@@ -31,8 +33,10 @@ const DetailedView = () => {
                     <NavigationBar />
                     <div>{pokemonObject[0].name}</div>
                     <img src={pokemonObject[0].sprites['other']['home']['front_default']} alt="" />
+                    <PokemonBlurb />
                     <PokemonTypes types={pokemonObject[0]['types']}/>
                     <StatChart stats={pokemonObject[0].stats}/>
+                    <EvolutionChain />
                 </div>)) || 
                 (<div>
                     <SearchView />
