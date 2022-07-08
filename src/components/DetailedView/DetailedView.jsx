@@ -36,7 +36,6 @@ const DetailedView = () => {
                     <PokemonBlurb />
                     <PokemonTypes types={pokemonObject[0]['types']}/>
                     <StatChart stats={pokemonObject[0].stats}/>
-                    <EvolutionChain />
                 </div>)) || 
                 (<div>
                     <SearchView />
