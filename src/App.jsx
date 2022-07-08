@@ -13,7 +13,10 @@ const App = () => {
     const [searchQuery, setSearchQuery] = useState("");
     const [speciesData, setSpeciesData] = useState({flavor_text_entries: [
         {
-            flavor_text: ""
+            flavor_text: "",
+            language: {
+                name: "en"
+            }
         }
     ]});
 
