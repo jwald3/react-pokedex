@@ -11,7 +11,11 @@ const App = () => {
     const [selectedCard, setSelectedCard] = useState(0);
     const [pokemonObject, setPokemonObject] = useState(null);
     const [searchQuery, setSearchQuery] = useState("");
-    const [speciesData, setSpeciesData] = useState(null);
+    const [speciesData, setSpeciesData] = useState({flavor_text_entries: [
+        {
+            flavor_text: ""
+        }
+    ]});
 
     useEffect(() => {
         axios.get(`https://pokeapi.co/api/v2/pokemon-species/${selectedCard}`)

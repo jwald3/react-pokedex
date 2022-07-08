@@ -7,15 +7,14 @@ const PokemonBlurb = () => {
     const [description, setDescription] = useState("")
 
     useEffect(() => {
-        setDescription(speciesData['flavor_text_entries'][0]['flavor_text']);
+        setDescription(speciesData['flavor_text_entries'].filter(entry => 
+            entry.language.name === "en")[0]['flavor_text']
+        );
     }, [speciesData])
 
 
     function stripNonPrintableAndNormalize(text) {
-        // strip control chars
         text = text.replace(/\p{C}/gu, ' ');
-
-        // other common tasks are to normalize newlines and other whitespace
 
         // normalize newline
         text = text.replace(/\n\r/g, '\n');

@@ -15,9 +15,6 @@ const PokemonCard = ({pokemon}) => {
     const selectedPokemon = getSelectedPokemon(pokemon);
     const pokemonType = selectedPokemon[0]['types'][0]['type']['name'];
 
-    console.log(pokemonType)
-
-
     return (
         <div className='pokemon-card' onClick={() => setSelectedCard(pokemon.id)}>   
             <div className="backing-circle" style={{backgroundColor: `${bgTypeColors[pokemonType]}`}}>
