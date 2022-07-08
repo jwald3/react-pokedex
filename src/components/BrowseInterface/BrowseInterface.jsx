@@ -3,6 +3,7 @@ import AllPokemon from '../AllPokemon/AllPokemon'
 import SearchBar from '../SearchBar/SearchBar'
 import { pokemonData } from '../../data/pokemon'
 import { AppContext } from '../../App'
+import './BrowseInterface.css';
 
 const BrowseInterface = () => {
 
@@ -11,7 +12,7 @@ const BrowseInterface = () => {
 
 
     return (
-        <div className='all-pokemon'>
+        <div className='browse-interface-container'>
             <SearchBar />
             <AllPokemon 
                 pokemon={pokemonData.filter(pokemon => 

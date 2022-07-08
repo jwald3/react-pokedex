@@ -1,6 +1,6 @@
-.all-pokemon {
+.browse-interface-container {
     min-height: 100vh;
     max-height: 100vh;
-    overflow-y: scroll;
     width: 40vw;
+    overflow: hidden;
 }
