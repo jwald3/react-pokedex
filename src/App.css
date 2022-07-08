@@ -44,31 +44,6 @@
     display: none;
 }
 
-.pokemon-card {
-    display: flex;
-    align-items: center;
-    border: 0.1vmin solid #f7fcff;
-    padding-left: 5%;
-    height: 20%;
-    font-size: 4vmin;
-    background-color: #eff8ff;
-}
-
-.backing-circle {
-    margin-top: 10px;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    align-items: center;
-    display: flex;
-    margin-right: 10%;
-}
-
-.backing-circle img {
-    height: 150px;
-    width: auto;
-}
-
 .detailed-view {
     flex: 3;
     font-size: 4vmin;

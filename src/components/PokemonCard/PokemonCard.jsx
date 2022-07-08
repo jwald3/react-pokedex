@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { pokemonData } from '../../data/pokemon'
 import { AppContext } from '../../App'
 import { bgTypeColors } from '../../data/typeColors'
+import './PokemonCard.css';
 
 const PokemonCard = ({pokemon}) => {
 
