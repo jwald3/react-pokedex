@@ -26,8 +26,8 @@ const NavigationBar = () => {
     return (
         <div className='navigation-bar'>
             <div className="arrow-bar">
-                <button className={selectedCard > 1 ? "": "only-forward"} onClick={() => navigateBack()}><IoCaretBack/></button>
-                <button className={selectedCard < 151 ? "": "only-back"} onClick={() => navigateForward()}><IoCaretForward/></button>
+                <button className={selectedCard > 1 ? "back": "back-hidden"} onClick={() => navigateBack()}><IoCaretBack/></button>
+                <button className={selectedCard < 151 ? "forward": "forward-hidden"} onClick={() => navigateForward()}><IoCaretForward/></button>
             </div>
             <div className='close-btn' onClick={() => closeBtn()}><IoCloseCircle/></div>
         </div>

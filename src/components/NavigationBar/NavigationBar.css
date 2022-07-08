@@ -9,9 +9,7 @@
     width: 90%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-left: 20%;
-    padding-right: 10%;
+    flex-direction: row;
 }
 
 .navigation-bar button {
@@ -30,10 +28,13 @@
     width: 10%;
 }
 
-.only-forward {
-    display: none;
+.back,
+.forward {
+    flex: 1;
 }
 
-.only-back {
-    display: none;
+.forward-hidden,
+.back-hidden {
+    width: 50%;
+    visibility: hidden;
 }

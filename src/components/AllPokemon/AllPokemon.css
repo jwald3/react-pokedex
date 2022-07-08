@@ -1,3 +1,9 @@
 .all-pokemon::-webkit-scrollbar {
     display: none;
 }
+
+.all-pokemon {
+    max-height: 100vh;
+    overflow-y: scroll;
+    flex: 2;
+}

@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import { AppContext } from '../../App'
-import TypeForm from '../TypeForm/TypeForm';
 import './SearchBar.css'
 
 const SearchBar = () => {

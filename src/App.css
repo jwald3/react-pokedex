@@ -34,23 +34,6 @@
     color: #61dafb;
 }
 
-.all-pokemon {
-    max-height: 100vh;
-    overflow-y: scroll;
-    flex: 2;
-}
-
-.detailed-view {
-    flex: 3;
-    font-size: 4vmin;
-    background-color: #828a95;
-}
-
-.detailed-view img {
-    height: 20vh;
-    width: auto;
-}
-
 .stat-chart {
     width: 40vw;
     margin-left: 0;

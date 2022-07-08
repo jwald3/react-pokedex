@@ -3,7 +3,6 @@ import './TypeForm.css'
 
 const TypeForm = () => {
 
-
     const types = [
         {normal: "Normal"},
         {fire: "Fire"},

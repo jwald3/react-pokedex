@@ -8,8 +8,8 @@ const PokemonCard = ({pokemon}) => {
 
     const { setSelectedCard } = useContext(AppContext);
 
-    const getSelectedPokemon = (selectedPokemon) => {
-        return pokemonData.filter(poke => poke.id === selectedPokemon['id']);
+    const getSelectedPokemon = (selectedPkmn) => {
+        return pokemonData.filter(poke => poke.id === selectedPkmn['id']);
     }
 
     const selectedPokemon = getSelectedPokemon(pokemon);

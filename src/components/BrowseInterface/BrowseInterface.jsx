@@ -6,10 +6,7 @@ import { AppContext } from '../../App'
 import './BrowseInterface.css';
 
 const BrowseInterface = () => {
-
     const { searchQuery } = useContext(AppContext);
-
-
 
     return (
         <div className='browse-interface-container'>
