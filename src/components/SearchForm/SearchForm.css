@@ -6,8 +6,9 @@
 .search-form-container {
     margin-top: 5%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    height: 40vh;
+    width: 100%;
 }
 
 .search {
@@ -25,14 +26,13 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     font-size: 2vmin;
-    padding: 3.3%;
-    height: 2vmin;
+    padding: 3%;
     width: 400px;
 }
 
 .search-icon {
-    height: 5.2vmin;
-    width: 5.2vmin;
+    height: 100%;
+    width: 20%;
     background-color: white;
     display: grid;
     place-items: center;
@@ -46,7 +46,7 @@ input:focus {
 }
 
 .data-result {
-    margin-top: 5px;
+    margin-top: 1%;
     width: 100%;
     height: 20vh;
     background-color: white;
@@ -67,7 +67,7 @@ input:focus {
 }
 
 .pokemon-option {
-    font-size: 2.5vmin;
+    font-size: 2.4vmin;
 }
 
 .pokemon-option:hover {
