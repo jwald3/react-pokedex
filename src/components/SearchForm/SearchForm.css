@@ -14,7 +14,7 @@
 .search {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     margin-left: 20%;
     margin-right: 20%;
 }

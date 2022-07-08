@@ -1,5 +1,7 @@
 .detailed-view {
     min-height: 100vh;
     max-height: 100vh;
-    width: 60vw;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
