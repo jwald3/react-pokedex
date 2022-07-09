@@ -32,9 +32,12 @@ const SearchForm = () => {
         <div className="search-form-container">
             <div className='search'>
                 <div className="search-inputs">
-                    <input type='text' placeholder="Please enter a Pokemon's name..." value={searchTerm} onChange={handleFilter}/>
                     <div className="search-icon">
-                        {filteredData.length === 0 ? <SearchIcon /> : <CloseIcon id='clear-btn' onClick={clearInput}/>}
+                        <SearchIcon /> 
+                    </div>
+                    <input type='text' placeholder="Please enter a Pokemon's name..." value={searchTerm} onChange={handleFilter}/>
+                    <div className="close-icon">
+                        {filteredData.length === 0 ? "" : <CloseIcon id='clear-btn' onClick={clearInput}/>}
                     </div>
                 </div>
                 { filteredData.length > 0 &&
