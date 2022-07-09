@@ -6,7 +6,7 @@
     margin-right: auto;
     overflow: hidden;
     background-color: #828a95;
-    font-size: 1.6rem;
+    font-size: 1.6vmax;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -42,6 +42,6 @@
 }
 
 .pokemon-name {
-    font-size: 2rem;
+    font-size: 2vmax;
     margin-top: 2%;
 }

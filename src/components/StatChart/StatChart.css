@@ -1,5 +1,5 @@
 .chart canvas {
-    font-size: 2rem;
+    font-size: 2vmin !important;
     width: 100% !important;
     height: 100% !important;
 }

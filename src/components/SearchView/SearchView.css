@@ -1,15 +1,19 @@
+.search-view-container {
+    height: 100vh;
+}
+
 .message {
-    margin-top: 10vh;
+    margin: 10% auto;
     text-transform: none;
     width: 70%;
-    min-height: 30vh;
+    min-height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(255, 255, 255, 0.7);
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 5%;
+    padding-right: 5%;
     font-size: 3vmin;
 }
