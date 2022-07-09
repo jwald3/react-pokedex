@@ -8,6 +8,10 @@
     font-family: "Lato", "sans-serif";
 }
 
+.right-container {
+    height: 100vh;
+}
+
 .App-logo {
     height: 40vmin;
     pointer-events: none;
@@ -32,21 +36,6 @@
 
 .App-link {
     color: #61dafb;
-}
-
-.stat-chart {
-    width: 40vw;
-    margin-left: 0;
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(255, 255, 255, 0.8);
-    align-items: center;
-}
-
-.chart {
-    width: 40vw;
 }
 
 .pokemon-types {
@@ -82,10 +71,6 @@
     cursor: pointer;
     font-size: 2rem;
     color: #fff;
-}
-
-.type-container {
-    margin-bottom: 5%;
 }
 
 @keyframes App-logo-spin {

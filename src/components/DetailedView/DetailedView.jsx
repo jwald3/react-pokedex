@@ -31,11 +31,15 @@ const DetailedView = () => {
             (pokemonObject && 
                 (<div>
                     <NavigationBar />
-                    <div>{pokemonObject[0].name}</div>
-                    <img src={pokemonObject[0].sprites['other']['home']['front_default']} alt="" />
-                    <PokemonBlurb />
-                    <PokemonTypes types={pokemonObject[0]['types']}/>
-                    <StatChart stats={pokemonObject[0].stats}/>
+                    <div className="bio-container">
+                        <div className='pokemon-name'>{pokemonObject[0].name}</div>
+                        <img src={pokemonObject[0].sprites['other']['home']['front_default']} alt="" />
+                        <PokemonBlurb />
+                    </div>
+                    <div className="attributes-container">
+                        <PokemonTypes types={pokemonObject[0]['types']}/>
+                        <StatChart stats={pokemonObject[0].stats}/>
+                    </div>
                 </div>)) || 
                 (<div>
                     <SearchView />

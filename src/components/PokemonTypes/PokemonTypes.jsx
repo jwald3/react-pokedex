@@ -1,5 +1,6 @@
 import React from 'react'
 import TypeIcon from '../TypeIcon/TypeIcon';
+import './PokemonTypes.css'
 
 const PokemonTypes = ({types}) => {
   return (

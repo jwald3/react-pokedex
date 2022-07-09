@@ -40,7 +40,7 @@ const App = () => {
                 }}
             >
                 <BrowseInterface />
-                <DetailedView />
+                <DetailedView className="right-container"/>
             </AppContext.Provider>
         </div>
     );

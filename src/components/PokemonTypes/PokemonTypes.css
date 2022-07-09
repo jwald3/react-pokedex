@@ -1,0 +1,7 @@
+.type-container {
+    margin: 2% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 10vh;
+}

@@ -3,7 +3,7 @@ import { Bar } from "react-chartjs-2";
 import { Chart as ChartJS } from "chart.js/auto";
 import { AppContext } from '../../App';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
-import '../../App.css'
+import './StatChart.css'
 
 const StatChart = ({ stats }) => {
 
