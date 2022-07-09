@@ -27,9 +27,9 @@ const DetailedView = () => {
     }, [selectedCard])
 
     return (
-        <div className='detailed-view'>{
+        <div className='detailed-view-container'>{
             (pokemonObject && 
-                (<div>
+                (<div className='detailed-view'>
                     <NavigationBar />
                     <div className="bio-container">
                         <div className='pokemon-name'>{pokemonObject[0].name}</div>
