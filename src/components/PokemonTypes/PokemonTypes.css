@@ -5,3 +5,12 @@
     justify-content: space-around;
     height: 20%;
 }
+
+@media only screen and (max-width: 500px) {
+    .type-container {
+        margin: 5% auto;
+        min-height: 25%;
+        font-size: 2.5vmax;
+        justify-content: space-between;
+    }
+}

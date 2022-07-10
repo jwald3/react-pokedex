@@ -16,3 +16,9 @@
     border: 0px;
     border-radius: 2rem;
 }
+
+@media only screen and (max-width: 500px) {
+    .search-container {
+        height: 5vh;
+    }
+}

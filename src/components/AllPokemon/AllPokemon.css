@@ -7,3 +7,13 @@
     overflow-y: scroll;
     flex: 2;
 }
+
+@media only screen and (max-width: 500px) {
+    .all-pokemon {
+        min-height: 20vh;
+        max-height: 20vh;
+        min-width: 100vw;
+        overflow-y: hidden;
+        display: flex;
+    }
+}

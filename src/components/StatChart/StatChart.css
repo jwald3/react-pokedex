@@ -25,3 +25,14 @@
     align-items: center;
     justify-content: center;
 }
+
+@media only screen and (max-width: 500px) {
+    .chart canvas {
+        font-size: 1.2vmin !important;
+    }
+
+    .stat-chart {
+        width: 80%;
+        height: 27vh;
+    }
+}

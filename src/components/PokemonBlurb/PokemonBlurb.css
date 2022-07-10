@@ -13,6 +13,7 @@
 
 @media only screen and (max-width: 850px) {
     .blurb-container {
-        font-size: 1vmax;
+        max-width: 80% !important;
+        font-size: 2vmax;
     }
 }

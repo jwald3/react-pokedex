@@ -17,3 +17,9 @@
     padding-right: 5%;
     font-size: 3vmin;
 }
+
+@media only screen and (max-width: 500px) {
+    .message {
+        font-size: 3vmax;
+    }
+}

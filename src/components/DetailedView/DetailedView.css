@@ -45,3 +45,26 @@
     font-size: 2vmax;
     margin-top: 2%;
 }
+
+@media only screen and (max-width: 500px) {
+    .detailed-view-container {
+        min-height: 75vh;
+        max-height: 75vh;
+        width: 100vw;
+    }
+
+    .bio-container {
+        min-height: 50%;
+        max-height: 50%;
+    }
+
+    .bio-container img {
+        height: 15vh;
+        width: auto;
+        margin-bottom: 2%;
+    }
+
+    .pokemon-name {
+        font-size: 2.5vmax;
+    }
+}

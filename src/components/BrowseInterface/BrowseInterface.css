@@ -4,3 +4,11 @@
     width: 40vw;
     overflow: hidden;
 }
+
+@media only screen and (max-width: 500px) {
+    .browse-interface-container {
+        min-height: 25vh;
+        max-height: 25vh;
+        width: 100vw;
+    }
+}
