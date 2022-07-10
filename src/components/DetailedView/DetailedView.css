@@ -20,29 +20,29 @@
 }
 
 .bio-container {
-    min-height: 40%;
-    max-height: 40%;
+    min-height: 45%;
+    max-height: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .bio-container img {
-    height: 40%;
+    height: 55%;
     width: auto;
     align-self: center;
 }
 
 .attributes-container {
-    min-height: 55%;
-    max-height: 55%;
+    min-height: 50%;
+    max-height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 .pokemon-name {
-    font-size: 2vmax;
+    font-size: 2.5vmax;
     margin-top: 2%;
 }
 

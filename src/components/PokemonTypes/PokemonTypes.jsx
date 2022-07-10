@@ -5,7 +5,7 @@ import './PokemonTypes.css'
 const PokemonTypes = ({types}) => {
   return (
     <div className="type-container">
-        {types.length > 1 ? "Types"  : "Type"}
+        <div className="type-label">{types.length > 1 ? "Types"  : "Type"}</div>
         <div className='pokemon-types'>
         {
             types.map(type => (
