@@ -54,12 +54,12 @@ input:focus {
 }
 .search-icon svg,
 .close-icon svg {
-    font-size: 3.5vmin;
+    font-size: 3vmin;
     padding: auto;
 }
 
 .data-result {
-    margin-top: 1%;
+    margin-top: 1.5%;
     width: 45%;
     height: 20%;
     background-color: white;
