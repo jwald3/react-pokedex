@@ -29,6 +29,10 @@
     width: 100%;
 }
 
+.backing-circle img:hover {
+    animation: wiggle 2.5s infinite;
+}
+
 @media only screen and (max-width: 500px) {
     .pokemon-card {
         flex-direction: column;
@@ -41,5 +45,23 @@
 
     .backing-circle {
         width: 60%;
+    }
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-3deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-1deg);
+    }
+    100% {
+        transform: rotate(2deg);
     }
 }
