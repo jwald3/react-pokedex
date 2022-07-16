@@ -39,6 +39,7 @@
 .close-icon svg {
     font-size: 3vmin;
     padding: auto;
+    color: rgba(123, 135, 148);
 }
 
 .close-icon {

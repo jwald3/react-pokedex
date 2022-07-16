@@ -1,6 +1,6 @@
 import React from 'react'
 import SearchIcon from '@mui/icons-material/Search';
-import CloseIcon from '@mui/icons-material/Close';
+import CancelIcon from '@mui/icons-material/Cancel';
 import './Search.css'
 
 const Search = ({ termQuery, termQuerySetter }) => {
@@ -21,7 +21,7 @@ const Search = ({ termQuery, termQuerySetter }) => {
             </div>
             <input className='search-input' type='text' value={termQuery} placeholder='Search for a Pokemon...' onChange={(e) => updateQuery(e.target.value)}/>
             <div className="close-icon">
-                {termQuery === "" ? "" : <CloseIcon id='clear-btn' onClick={clearInput}/>}
+                {termQuery === "" ? "" : <CancelIcon id='clear-btn' onClick={clearInput}/>}
             </div>
         </div>
     )
