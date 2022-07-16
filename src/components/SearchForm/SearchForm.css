@@ -1,9 +1,3 @@
-.search-inputs {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
 .search-form-container {
     margin-top: 5%;
     display: flex;
@@ -16,52 +10,17 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    height: 50%;
 }
 
-.search input {
-    background-color: white;
-    border: 0;
-    font-size: 2vmin;
-    width: 40%;
-    height: 100%;
-    padding: 0.5vmin 0;
-    border-radius: 0;
-}
-
-.close-icon {
-    height: 100%;
-    width: 5%;
-    background-color: white;
-    display: grid;
-    place-items: center;
-    border-radius: 0 2rem 2rem 0;
-    padding: 0.5vmin;
-}
-
-.search-icon {
-    height: 100%;
-    width: 5%;
-    background-color: white;
-    display: grid;
-    place-items: center;
-    border-radius: 2rem 0 0 2rem;
-    padding: 0.5vmin;
-}
-
-input:focus {
-    outline: none;
-}
-.search-icon svg,
-.close-icon svg {
-    font-size: 3vmin;
-    padding: auto;
+.search > .inputs {
+    height: 10%;
 }
 
 .data-result {
     margin-top: 1.5%;
     width: 45%;
-    height: 20%;
+    height: 30%;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 0.5vmin 2.5vmin;
     overflow: hidden;
@@ -87,8 +46,4 @@ input:focus {
 
 .pokemon-option:hover {
     background-color: lightgrey;
-}
-
-#clear-btn {
-    cursor: pointer;
 }

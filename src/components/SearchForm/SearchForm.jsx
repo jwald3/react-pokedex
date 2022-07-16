@@ -1,45 +1,31 @@
-import React, { useContext, useState } from 'react'
-import SearchIcon from '@mui/icons-material/Search';
-import CloseIcon from '@mui/icons-material/Close';
+import React, { useContext, useEffect, useState } from 'react'
 import { pokemonData } from '../../data/pokemon'
 import { AppContext } from '../../App'
 import './SearchForm.css'
+import Search from '../Search/Search';
 
 const SearchForm = () => {
     const [searchTerm, setSearchTerm] = useState("");
     const [filteredData, setFilteredData] = useState([]);
     const {setSelectedCard} = useContext(AppContext)
+    
 
-    const handleFilter = (event) => {
-        const term = event.target.value;
-        setSearchTerm(term);
+    useEffect(() => {
         const newFilter = pokemonData.filter((pokemon) => {
-            return pokemon.name.toLowerCase().includes(term.toLowerCase());
+            return pokemon.name.toLowerCase().includes(searchTerm.toLowerCase());
         });
-        if (term === "") {
+        if (searchTerm === "") {
             setFilteredData([])
         } else {
             setFilteredData(newFilter);
         }
-    }
+    }, [searchTerm])
 
-    const clearInput = () => {
-        setFilteredData([])
-        setSearchTerm("")
-    }
 
     return (
         <div className="search-form-container">
             <div className='search'>
-                <div className="search-inputs">
-                    <div className="search-icon">
-                        <SearchIcon /> 
-                    </div>
-                    <input type='text' placeholder="Please enter a Pokemon's name..." value={searchTerm} onChange={handleFilter}/>
-                    <div className="close-icon">
-                        {filteredData.length === 0 ? "" : <CloseIcon id='clear-btn' onClick={clearInput}/>}
-                    </div>
-                </div>
+                <Search termQuery={searchTerm} termQuerySetter={setSearchTerm}/>
                 { filteredData.length > 0 &&
                     <div className="data-result">
                     {
